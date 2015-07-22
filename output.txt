@@ -1,0 +1,53 @@
+'''
+OUTPUT
+
+root@beaglebone:~# python tc56_lift.py 
+P9_22
+P9_16
+P9_14
+P9_12
+P9_30
+P9_23
+P9_26
+P9_24
+P9_21
+P9_15
+P9_13
+P9_11
+[[0, 0, 0, 1], [0, 0, 0, 0]]
+crossed 1
+[[0, 0, 0, 1], [0, 0, 0, 0]]
+crossed 2
+[[0, 0, 0, 1], [0, 0, 0, 0]]
+Halted on 3
+[[0, 0, 0, 0], [1, 0, 0, 0]]
+crossed 2
+[[0, 0, 0, 0], [1, 0, 0, 0]]
+crossed 1
+[[0, 0, 0, 0], [1, 0, 0, 0]]
+Halted on 0
+[[0, 0, 1, 0], [0, 0, 0, 0]]
+crossed 1
+[[0, 0, 1, 0], [0, 0, 0, 0]]
+Halted on 2
+[[0, 0, 0, 1], [0, 0, 0, 0]]
+Halted on 3
+[[0, 0, 0, 0], [1, 0, 0, 0]]
+crossed 2
+[[0, 0, 0, 0], [1, 1, 0, 0]]
+Halted on 1
+[[0, 0, 0, 0], [1, 0, 0, 0]]
+Halted on 0
+^CTraceback (most recent call last):
+  File "tc56_lift.py", line 276, in <module>
+    StateMachine()
+  File "tc56_lift.py", line 253, in StateMachine
+    stationary()
+  File "tc56_lift.py", line 118, in stationary
+    button_read()
+  File "tc56_lift.py", line 69, in button_read
+    button_data[i][j] = GPIO.input(button_pins[i][j])
+KeyboardInterrupt
+root@beaglebone:~# 
+
+'''
